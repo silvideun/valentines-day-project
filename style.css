@@ -12,14 +12,14 @@ body {
 }
 
 
- 
+
 .buttons {
     display: flex;
     justify-content: center;
     gap: 50px;
     margin-top: 30px;
+    transition: gap 0.3s ease; 
 }
-
 
 button {
     font-family: 'Quicksand', sans-serif;
@@ -31,18 +31,10 @@ button {
     transition: all 0.4s ease-in-out;
     height: auto;
     cursor: pointer; 
-
-    
-
+    transform-origin: center; 
+    min-width: 120px; 
 }
 
-#cat {
-    top: 718px;
-    left: 873px;
-    position: absolute;
-    width: 32px;
-    height: 32px;
-}
 
 #yes {
     background-color: #ffb1d8;
@@ -63,6 +55,17 @@ button:hover {
     scale: 1.05;
 }
 
+.no-touch button:hover {
+    opacity: 0.8;
+    scale: 1.05;
+  }
+  
+  .touch-device button:active {
+    opacity: 0.8;
+    transform: scale(0.95);
+    transition: transform 0.1s;
+  }
+
 .fade-out {
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
@@ -81,5 +84,73 @@ button:hover {
     transform: scale(0);
     transition: transform 0.4s ease-in-out;
 }
+
+@media (max-width: 768px) {     
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #kuromi {
+        max-width: 80%; 
+        height: auto;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 15px 20px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) { 
+    #kuromi {
+        max-width: 90%;
+   
+    }
+
+
+    button {
+        font-size: 16px;
+        padding: 12px 16px;
+       
+    }
+
+
+
+    .buttons {
+    width: 100%;
+    justify-content: space-around;
+    }
+
+    .fade-in {
+       font-size: 24px;
+    }
+}
+
+
+@media (hover: none) {
+    #no:hover, #yes:hover {
+      opacity: 1 !important;
+      transform: none !important;
+      scale: 1 !important;
+    }
+  }
+  
+
+  .no-touch #no:active,
+  .no-touch #no.active {
+    opacity: 0.8;
+    transform: scale(0.95);
+  }
+  
+  .touch-device #no:active {
+    opacity: 0.8;
+    transform: scale(0.95);
+    transition: transform 0.1s;
+  }
 
 
