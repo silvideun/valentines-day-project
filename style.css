@@ -13,14 +13,12 @@ body {
 
 
 
-
 .buttons {
     display: flex;
     justify-content: center;
-    width: 80%; 
     gap: 50px;
     margin-top: 30px;
-    transition: gap 0.3s ease; 
+    transition: gap 0.3s ease;
 }
 
 button {
@@ -33,7 +31,7 @@ button {
     transition: all 0.4s ease-in-out;
     height: auto;
     cursor: pointer; 
-    transform-origin: center; 
+    transform-origin: center;
     min-width: 120px; 
 }
 
@@ -57,17 +55,6 @@ button:hover {
     scale: 1.05;
 }
 
-.no-touch button:hover {
-    opacity: 0.8;
-    scale: 1.05;
-  }
-  
-  .touch-device button:active {
-    opacity: 0.8;
-    transform: scale(0.95);
-    transition: transform 0.1s;
-  }
-
 .fade-out {
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
@@ -87,7 +74,7 @@ button:hover {
     transition: transform 0.4s ease-in-out;
 }
 
-@media (max-width: 768px) {     
+@media (max-width: 768px) { 
     body {
         display: flex;
         flex-direction: column;
@@ -97,7 +84,7 @@ button:hover {
     }
 
     #kuromi {
-        max-width: 80%; 
+        max-width: 80%;
         height: auto;
     }
 
@@ -114,6 +101,7 @@ button:hover {
    
     }
 
+    .text
 
     button {
         font-size: 16px;
@@ -129,30 +117,9 @@ button:hover {
     }
 
     .fade-in {
-       font-size: 24px;
+       font-size: 18px;
     }
 }
 
-
-@media (hover: none) {
-    #no:hover, #yes:hover {
-      opacity: 1 !important;
-      transform: none !important;
-      scale: 1 !important;
-    }
-  }
-  
-
-  .no-touch #no:active,
-  .no-touch #no.active {
-    opacity: 0.8;
-    transform: scale(0.95);
-  }
-  
-  .touch-device #no:active {
-    opacity: 0.8;
-    transform: scale(0.95);
-    transition: transform 0.1s;
-  }
 
 
