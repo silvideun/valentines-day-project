@@ -1,5 +1,5 @@
 💘 Interactive Kuromi Valentine Experience
-A cute and emotional confession simulator featuring everyone's favorite Sanrio character!
+
 
 ✨ Key Features:
 
