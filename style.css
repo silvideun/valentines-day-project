@@ -1,0 +1,85 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #edceff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    cursor: url('valentine pic and gif/kuromi cursor.png'), auto;
+}
+
+
+ 
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+
+button {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.4s ease-in-out;
+    height: auto;
+    cursor: pointer; 
+
+    
+
+}
+
+#cat {
+    top: 718px;
+    left: 873px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+}
+
+#yes {
+    background-color: #ffb1d8;
+    color: #000000;
+    cursor: url('valentine pic and gif/cursor2.png'), auto;
+    border: black 2px solid;
+}
+
+#no {
+    background-color: #000000;
+    color: #ff99cc;
+    cursor: url('valentine pic and gif/cursor3.png'), auto;
+    border: white 2px solid;
+}
+
+button:hover {
+    opacity: 0.8;
+    scale: 1.05;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.none {
+    display: none;
+}
+
+.hide {
+    transform: scale(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+
